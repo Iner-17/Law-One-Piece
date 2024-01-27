@@ -4,6 +4,21 @@
     --font: "Poppins", Arial;
 }
 
+
+.room-effect {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.01%;
+    height: 0.01%;
+    border-radius: 50%;
+    background-color: #5b94e3;
+    opacity: 0.5;
+    transition: 0.8s ease-in;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -110,4 +125,30 @@ a {
     padding: 12px 18px;
     background-color: rgb(56, 69, 136);
     color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image {
+    position: relative;
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.image button {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 0;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border: none;
+    background-color: rgb(56, 69, 136);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
